@@ -14,7 +14,8 @@ class DespesaController extends Controller
      */
     public function index()
     {
-        //
+        $despesa = Despesa::get();
+        return view('despesa.index', ['despesa' => $despesa]);
     }
 
     /**
