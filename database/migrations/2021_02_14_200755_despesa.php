@@ -16,7 +16,7 @@ class Despesa extends Migration
         Schema::create('despesa', function (Blueprint $table) {
             $table->id();
             $table->string('descricao', 200);
-            $table->string('categoria', 1); // Fixa ou Variada
+            $table->string('categoria', 1); // (F)ixa ou (V)ariada
             $table->timestamps();
         });
     }

@@ -14,8 +14,9 @@ class DespesaController extends Controller
      */
     public function index()
     {
-        $despesa = Despesa::get();
-        return view('despesa.index', ['despesa' => $despesa]);
+        $despesa = Despesa::all();
+
+        return view('despesa.index', compact('despesa'));
     }
 
     /**
@@ -25,7 +26,7 @@ class DespesaController extends Controller
      */
     public function create()
     {
-        //
+        
     }
 
     /**
@@ -36,7 +37,7 @@ class DespesaController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        
     }
 
     /**
